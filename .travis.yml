@@ -4,5 +4,5 @@ jdk:
   - oraclejdk8
 services:
   - docker
-install:
-  - docker build -t blog .
+script:
+  - docker build -t demo:1.0 .

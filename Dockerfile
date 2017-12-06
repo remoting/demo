@@ -1,6 +1,6 @@
-FROM docker.yihecloud.com/base/java:2.0
+FROM remoting/java:8
 
-MAINTAINER liyong yli@yihecloud.com
+MAINTAINER remoting remoting@qq.com
 
 WORKDIR /program
 
