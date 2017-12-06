@@ -16,3 +16,17 @@ You can view the api documentation in swagger-ui by pointing to
 http://localhost:8080/  
 
 Change default port value in application.properties
+
+=============
+Install apt addons
+
+before_install
+install
+before_script
+script
+after_success or after_failure
+【OPTIONAL】 before_deploy
+【OPTIONAL】 deploy
+【OPTIONAL】 after_deploy
+after_script
+ 
