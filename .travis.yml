@@ -5,4 +5,5 @@ jdk:
 services:
   - docker
 script:
+  - mvn package
   - docker build -t demo:1.0 .
