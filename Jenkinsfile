@@ -3,7 +3,7 @@ pipeline {
     environment {
         DockerServer='192.168.40.184:2375'
         DockerRegistry='http://192.168.40.184:5000'
-        DockerImageName='192.168.40.184:5000/demo:1-$BUILD_TIMESTAMP'
+        DockerImageName=' 192.168.40.184:5000/demo:1'
         DockerRegistryCredential=''
     }
     stages {
