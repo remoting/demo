@@ -4,7 +4,6 @@ pipeline {
         DockerServer='192.168.40.184:2375'
         DockerRegistry='http://192.168.40.184:5000'
         DockerImageName='192.168.40.184:5000/demo:1'
-        DockerRegistryCredential=''
     }
     stages {
         stage('Build') {
