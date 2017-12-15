@@ -15,10 +15,12 @@ pipeline {
         stage('Docker') {
             steps {
                 echo 'Docker..'
-                withDockerServer([uri: DockerServer]) {
-                    withDockerRegistry([credentialsId: DockerRegistryCredential, url: DockerRegistry]) {
-                        image = docker.build(DockerImageName)
-                        image.push();
+                script {
+                    withDockerServer([uri: DockerServer]) {
+                        withDockerRegistry([credentialsId: DockerRegistryCredential, url: DockerRegistry]) {
+                            def image = docker.build(DockerImageName)
+                            image.push();
+                        }
                     }
                 }
             }
