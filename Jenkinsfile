@@ -18,10 +18,10 @@ pipeline {
                 echo 'Docker..'
                 script {
                     withDockerServer([uri: DockerServer]) {
-                        withDockerRegistry {
+                       
                             def image = docker.build(DockerImageName)
                             image.push();
-                        }
+                         
                     }
                 }
             }
