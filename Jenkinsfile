@@ -17,12 +17,12 @@ pipeline {
             steps {
                 echo 'Docker..'
                 script {
-                    withDockerServer([uri: DockerServer]) {
-                       
+                    /* withDockerServer([uri: DockerServer]) { */
+                        withDockerRegistry([url: DockerRegistry]) { {
                             def image = docker.build(DockerImageName)
                             image.push();
-                         
-                    }
+                        }
+                     /* } */
                 }
             }
         }
